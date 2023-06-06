@@ -1,0 +1,111 @@
+natafajardo@192 Parcial % git init
+Initialized empty Git repository in /Users/natafajardo/Desktop/Parcial/.git/
+natafajardo@192 Parcial % git remote add origin https://github.com/natafajardo/20230605Nataliafajardo.git
+natafajardo@192 Parcial % touch comandos.txt main.js in
+dex.html
+natafajardo@192 Parcial % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        comandos.txt
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+natafajardo@192 Parcial % 
+natafajardo@192 Parcial % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+natafajardo@192 Parcial % git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+natafajardo@192 Parcial % git add .
+natafajardo@192 Parcial % git commit -m "commit 01 de N
+atalia Fajardo"
+[master (root-commit) e9df464] commit 01 de Natalia Fajardo
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+natafajardo@192 Parcial % git status
+On branch master
+nothing to commit, working tree clean
+natafajardo@192 Parcial % git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 265.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/natafajardo/20230605Nataliafajardo.git
+ * [new branch]      master -> master
+natafajardo@192 Parcial % git branch feature
+natafajardo@192 Parcial % git checkout feature
+Switched to branch 'feature'
+natafajardo@192 Parcial % mkdir Hardware Software Segur
+idadInformatica
+natafajardo@192 Parcial % cd Hardware
+natafajardo@192 Hardware % touch resumen.txt
+@192 Hardware % cd ..
+natafajardo@192 Parcial % cd SeguridadInformatica
+natafajardo@192 SeguridadInformatica % touch resumen.tx
+t
+natafajardo@192 SeguridadInformatica % cd ..
+natafajardo@192 Parcial % cd Software
+natafajardo@192 Software % touch resumen.txt
+natafajardo@192 Software % git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../Hardware/
+        ../SeguridadInformatica/
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+natafajardo@192 Software % git add .
+natafajardo@192 Software % git commit -m "commit 02 de 
+NataliaFajardo"
+[feature 7c52542] commit 02 de NataliaFajardo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Software/resumen.txt
+natafajardo@192 Software % cd ..
+natafajardo@192 Parcial % cd SeguridadInformatica
+natafajardo@192 SeguridadInformatica % git add . 
+natafajardo@192 SeguridadInformatica % git commit -m "c
+ommit 03 de natalia Fajardo"
+[feature cb235b7] commit 03 de natalia Fajardo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SeguridadInformatica/resumen.txt
+natafajardo@192 SeguridadInformatica % cd ..
+natafajardo@192 Parcial % git add .
+natafajardo@192 Parcial % git commit -m "commit 04 de N
+ataliaFajardo"
+[feature 0cd56d5] commit 04 de NataliaFajardo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+natafajardo@192 Parcial % git push origin feature
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 785 bytes | 785.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/natafajardo/20230605Nataliafajardo/pull/new/feature
+remote: 
+To https://github.com/natafajardo/20230605Nataliafajardo.git
+ * [new branch]      feature -> feature
+natafajardo@192 Parcial % git checkout master
+Switched to branch 'master'
+natafajardo@192 Parcial % mv main.js resumenHardware.tx
+t
+natafajardo@192 Parcial % mv index.html resumensoftware
+.txt
+natafajardo@192 Parcial % history > comandos.txt
